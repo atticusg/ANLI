@@ -380,7 +380,7 @@ def save_data(examples, name):
         prem.append(example[0] + "\n")
         label.append(example[1] + "\n")
         hyp.append(example[2] + "\n")
-        stuff.append((example[3], example[4], example[5]))
+        stuff.append(example)
     with open("pi." + "prem." + name, "w") as f:
         f.writelines(prem)
     with open("pi." + "hyp." + name, "w") as f:
