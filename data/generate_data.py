@@ -339,7 +339,7 @@ def get_label(premise, hypothesis):
             output = "permits"
         if premise.adverb_present == "normal" and (hypothesis.adverb_present == "" or hypothesis.adverb_present == "negate"):
             output = "permits"
-        if premise.adverb_present == "normal" and hypothesis.adverb_present == "normal"  and hypothesis.adverb == premise.adverb:
+        if premise.adverb_present == "normal" and hypothesis.adverb_present == "normal"  and hypothesis.adverb != premise.adverb:
             output = "permits"
     if output == "contradicts":
         n = ""
